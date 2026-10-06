@@ -1,0 +1,19 @@
+{
+  "kind": "course_authored_fixture",
+  "source_version": "loss-exercise-v1",
+  "history": [
+    {"role": "user", "content": "我的目标是理解自然对数交叉熵。当前未完成的题目是：标准答案 Token 的概率为 0.25，计算单个位置的 Loss。请只给提示，不直接给最终数值答案。"},
+    {"role": "assistant", "content": "已记录。你可以先回想概率与单位置交叉熵的关系，稍后继续练习。"},
+    {"role": "user", "content": "我先检查一下编辑器字号，手机横屏观看时能否看清？"},
+    {"role": "assistant", "content": "可以先放大编辑器，再用一小段代码和输出做录屏检查。"},
+    {"role": "user", "content": "我准备暂停学习，明天再回来。"},
+    {"role": "assistant", "content": "好的，明天可以从未完成的练习继续。"}
+  ],
+  "memory": {
+    "goal": "理解自然对数交叉熵",
+    "pending_question": "标准答案 Token 的概率为 0.25，计算单个位置的 Loss。",
+    "hints_only": true,
+    "source_version": "loss-exercise-v1"
+  },
+  "current_question": "请接着昨天的练习，只给我下一步。"
+}

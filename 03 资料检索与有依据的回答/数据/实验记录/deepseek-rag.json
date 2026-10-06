@@ -1,0 +1,55 @@
+{
+  "kind": "real_deepseek_api",
+  "recorded_at": "2026-09-23T12:32:47.817340+00:00",
+  "model": "deepseek-flash",
+  "question": "没有设置 STUDYBOX_CONFIG 时，从哪里找配置？文件不存在时 timeout 是多少？",
+  "result": {
+    "answer": "没有设置 `STUDYBOX_CONFIG` 时，会使用相对路径 `settings.json` 作为配置文件，相对路径以进程当前工作目录为起点 [study-guide.md:5-7]。该文件不存在时，返回默认配置，其中 `timeout` 为 30；如果文件中已有 `timeout`，可以覆盖这一取值 [study-guide.md:7-9]。",
+    "evidence": [
+      {
+        "citation": "study-guide.md:7-9",
+        "id": "ef0a24b64bf4575f",
+        "source_sha256": "ec2bfa2c6e0e52a398170fd5f49fa507dfd7b335a18b2c8a04064301bf5a939f",
+        "text": "没有设置环境变量时使用相对路径 settings.json；相对路径以进程当前工作目录为起点。\n文件不存在时返回默认配置，其中 timeout 为 30；已有文件中的 timeout 可以覆盖这一取值。\n"
+      },
+      {
+        "citation": "study-guide.md:5-7",
+        "id": "5e71da2764745d36",
+        "source_sha256": "ec2bfa2c6e0e52a398170fd5f49fa507dfd7b335a18b2c8a04064301bf5a939f",
+        "text": "# 配置入口\nload_settings 函数读取 STUDYBOX_CONFIG 指向的配置文件。\n没有设置环境变量时使用相对路径 settings.json；相对路径以进程当前工作目录为起点。"
+      },
+      {
+        "citation": "faq.md:3-5",
+        "id": "ac008938b72ac74b",
+        "source_sha256": "3725b02d4b636a5667dbacfc37133d5a5921a3cc48cc1f91bae719f4806cbe12",
+        "text": "答：演示客户端使用 timeout 参数设置等待上限；超时不说明任务一定没有在远端执行。\n\n问：如何继续昨天的学习？"
+      }
+    ],
+    "model_called": true,
+    "citation_check": {
+      "citations": [
+        "study-guide.md:5-7",
+        "study-guide.md:7-9"
+      ],
+      "unknown": [],
+      "has_citation": true,
+      "semantic_support": "requires_claim_review"
+    }
+  },
+  "usage": [
+    {
+      "prompt_tokens": 473,
+      "completion_tokens": 84,
+      "total_tokens": 557,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 217
+    }
+  ],
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "thinking": "disabled",
+  "max_tokens_per_call": 1000,
+  "automatic_retries": 0
+}
